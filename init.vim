@@ -46,6 +46,11 @@ nnoremap ge >a{j
 "                \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
 "               \,sm:block-blinkwait175-blinkoff150-blinkon175
 
+" Set tab width 2 for css and html only file
+autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType tmpl setlocal tabstop=2 shiftwidth=2 softtabstop=2
+
 " Make toggle ga for opening and closing terminal in Vim
 nnoremap ga :split <CR> :resize -8 <CR> :terminal<CR>
 tnoremap ga <C-\><C-n>:q!<CR>
