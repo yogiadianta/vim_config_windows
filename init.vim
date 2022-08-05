@@ -82,35 +82,6 @@ nnoremap <A-n> :tabp<CR>
 nnoremap <A-,> :tabmove -1<CR>
 nnoremap <A-.> :tabmove +1<CR>
 
-"" netrw setting
-"let g:netrw_winsize = -28
-"let g:netrw_banner = 0
-"let g:netrw_liststyle = 4
-"let g:netrw_browse_split = 4
-"let g:netrw_winsize = 15
-"let g:netrw_altv = ""
-""let g:netrw_sort_options = 3
-"" sort is affecting only; directories on top, files below
-""let g:netrw_sort_sequence = '[\/]$,*'
-
-"augroup ProjectDrawer
-"    autocmd!
-"    autocmd VimEnter * :Vexplore
-"augroup END
-
-"" Create new file without opening it in dir list panel
-"autocmd filetype netrw call Netrw_mappings()
-"function! Netrw_mappings()
-"    noremap <buffer>% :call CreateInPreview()<cr>
-"endfunction
-"function! CreateInPreview()
-"    let l:filename = input("please enter filename: ")
-"    "exec 'pedit ' . b:netrw_curdir.'/'.l:filename
-"    execute 'silent !echo off > ' . b:netrw_curdir.'/'.l:filename.'&& echo on'
-"    redraw!
-"endf
-
-
 " Plugins Section
 call plug#begin('~/.vim/plugged')
     " Vim surround
