@@ -79,18 +79,7 @@ nnoremap <A-.> :tabmove +1<CR>
 source ./plugins/lists.vim
 
 "Purify
-"let g:purify_bold = 0        " default: 1
-"let g:purify_italic = 0      " default: 1
-"let g:purify_underline = 0   " default: 1
-"let g:purify_undercurl = 0   " default: 1
-"let g:purify_inverse = 0     " default: 1
-""let g:purify_override_colors = {
-    """\ 'pink':  { 'gui': '#FF87FF', 'cterm': '213' },
-    """\ 'green': { 'gui': '#5FD700', 'cterm': '76' }
-""\ }
-"syntax on " This is required
-"set background=dark
-"colorscheme purify
+"source ./plugins/lists.vim
 
 " Gruvbox
 source ./plugins/gruvbox.vim
@@ -124,11 +113,3 @@ source ./plugins/nerdcommenter.vim
 
 " Autoformat
 "let g:run_all_formatters_python = 1
-
-" Need to find out more in :help or :options, See The prime yt video for more
-" set hidden
-"
-" undodir=~/.vim/undodir
-" undofile
-" noshowmode
-" completeopt=menuone,noinsert,noselect
