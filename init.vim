@@ -119,17 +119,8 @@ source ./plugins/devicons.vim
 " NerdCommenter
 source ./plugins/nerdcommenter.vim
 
-" Lsp
-let g:builtin_lps = v:true
-
 " Neoformat
-" nnoremap gs :Neoformat<Cr>
-" Run Neoformat everytime doing safe file
-"augroup fmt
-    "wautocmd!
-    "autocmd BufWritePre * undojoin | Neoformat
-"augroup END
-"let g:neoformat_enabled_python = ['autopep8']
+"source ./plugins/neoformat.vim
 
 " Autoformat
 "let g:run_all_formatters_python = 1
