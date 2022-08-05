@@ -146,7 +146,7 @@ call plug#begin('~/.vim/plugged')
     "Fuzzy Finder
     "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
-    "Themu
+    "Theme
     Plug 'morhetz/gruvbox'
     "Plug 'kyoz/purify', { 'rtp': 'vim' }
 
@@ -168,15 +168,14 @@ call plug#end()
 "let g:purify_undercurl = 0   " default: 1
 "let g:purify_inverse = 0     " default: 1
 ""let g:purify_override_colors = {
-    ""\ 'pink':  { 'gui': '#FF87FF', 'cterm': '213' },
-    ""\ 'green': { 'gui': '#5FD700', 'cterm': '76' }
+    """\ 'pink':  { 'gui': '#FF87FF', 'cterm': '213' },
+    """\ 'green': { 'gui': '#5FD700', 'cterm': '76' }
 ""\ }
 "syntax on " This is required
 "set background=dark
 "colorscheme purify
 
 " Gruvbox
-set background=dark
 let g:gruvbox_contrast_dark='hard'
 " Returns true if the color hex value is light
 function! IsHexColorLight(color) abort
@@ -190,6 +189,7 @@ function! IsHexColorLight(color) abort
 
   return l:brightness > 155
 endfunction
+set background=dark
 colorscheme gruvbox
 
 "Emmet
@@ -221,7 +221,7 @@ let g:user_emmet_settings = {
 
 " Airline
 "let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='raven'
+let g:airline_theme='minimalist'
 " candidate them
 " raven
 " serene
@@ -240,9 +240,9 @@ let g:airline_theme='raven'
 "let g:airline_base16_improved_contrast = 1
 
 " airline for tabline
-"let g:airline#extensions#tabline#enabled = 1
-""let g:airline#extensions#tabline#show_buffers = 0
-""let g:airline#extensions#tabline#show_tabs = 1
+let g:airline#extensions#tabline#enabled = 1
+"let g:airline#extensions#tabline#show_buffers = 1
+let g:airline#extensions#tabline#show_tabs = 1
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#show_buffers = 0
@@ -256,6 +256,9 @@ let g:airline#extensions#tabline#show_tab_type = 0
 " Change the airline tab separator
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline_left_sep='>'
+let g:airline_right_sep='<'
+
 
 "Coc Completion
 " Use tab for trigger completion with characters ahead and navigate.
