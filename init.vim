@@ -3,8 +3,6 @@
 "" map 'jk' and 'kj' to escape key in insert and command mode
 inoremap jk <esc>
 cnoremap jk <esc>
-"inoremap kj <esc>
-"tnoremap jk <esc>
 
 let mapleader = ","
 
@@ -40,11 +38,6 @@ vnoremap > >gv
 vnoremap < <gv
 vnoremap <tab> >gv
 nnoremap ge >a{j
-
-" set cursor stay at blinking even in all mode
-"set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
-"                \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
-"               \,sm:block-blinkwait175-blinkoff150-blinkon175
 
 " Set tab width 2 for css and html only file
 autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
@@ -103,130 +96,31 @@ source ./plugins/lists.vim
 source ./plugins/gruvbox.vim
 
 "Emmet
-let g:user_emmet_leader_key='<C-Z>'
-"let g:user_emmet_install_global = 0
-"autocmd FileType html,css EmmetInstall
-""enable all function in all mode.
-"let g:user_emmet_mode='a'    
-let g:user_emmet_settings = {
-\  'variables': {'lang': 'ja'},
-\  'html': {
-\    'default_attributes': {
-\      'option': {'value': v:null},
-\      'textarea': {'id': v:null, 'name': v:null, 'cols': 10, 'rows': 10},
-\    },
-\    'snippets': {
-\      'html:5': "<!DOCTYPE html>\n"
-\              ."<html lang=\"${lang}\">\n"
-\              ."<head>\n"
-\              ."\t<meta charset=\"${charset}\">\n"
-\              ."\t<title></title>\n"
-\              ."\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
-\              ."</head>\n"
-\              ."<body>\n\t${child}|\n</body>\n"
-\              ."</html>",
-\    },
-\  },
-\}
+source ./plugins/emmet.vim
 
 " Airline
-"let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='minimalist'
-" candidate them
-" raven
-" serene
-" hybrid
-" peaksea
-" minimalist
-" lucius
-" monochrome
-" google_dark
-" onedark
-" deus
-" distinguished
-" biogoo
-" zenburn
-" owo
-"let g:airline_base16_improved_contrast = 1
-
-" airline for tabline
-let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#show_buffers = 1
-let g:airline#extensions#tabline#show_tabs = 1
-
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#show_buffers = 0
-let g:airline#extensions#tabline#show_splits = 0
-let g:airline#extensions#tabline#show_tabs = 1
-let g:airline#extensions#tabline#show_tab_nr = 0
-let g:airline#extensions#tabline#show_tab_type = 0
-"let g:airline#extensions#tabline#close_symbol = '×'
-"let g:airline#extensions#tabline#show_close_button = 0
-
-" Change the airline tab separator
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline_left_sep='>'
-let g:airline_right_sep='<'
-
+source ./plugins/airline.vim
 
 "Coc Completion
-" Use tab for trigger completion with characters ahead and navigate.
-" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
-" other plugin before putting this into your config.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ CheckBackspace() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
-function! CheckBackspace() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-" Make <CR> auto-select the first completion item and notify coc.nvim to
-" format on enter, <cr> could be remapped by other vim plugin
-inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
-" coc config for extension
-let g:coc_global_extensions = [
-  \ 'coc-go',
-  \ 'coc-tsserver',
-  \ ]
-
-" Check More of this Yogi, come from ben awan init.nvim
-" Use `[g` and `]g` to navigate diagnostics
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
-
-" Remap keys for gotos
-"nmap <silent> gd <Plug>(coc-definition)
-nnoremap <silent> gd :call CocAction('jumpDefinition', 'vsplit')<CR>
-nnoremap <silent> gy <Plug>(coc-type-definition)
-nnoremap <silent> gi <Plug>(coc-implementation)
-"nnoremap <silent> gi :call CocAction('jumpImplementation', 'split')<CR>
-nnoremap <silent> gr <Plug>(coc-references)
-" Use K to show documentation in preview window
-nnoremap <silent> K :call <SID>show_documentation()<CR>
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
-
-"Fuzzy Finder
-
+source ./plugins/coc.vim
 
 " Telescope
-"nnoremap <C-p> :Telescope find_files layout_config={"prompt_position":"top"} <CR> <esc>
-"nnoremap <C-p> :Telescope find_files initial_mode=normal layout_config={"prompt_position":"bottom"} <CR>
-nnoremap <C-p> :Telescope find_files layout_config={"prompt_position":"bottom"} <CR>
-nnoremap <C-l> telescope.actions.layout.toggle_preview(true)
-nnoremap gc telescope.actions.layout.toggle_preview(false)
-"autocmd telescope.setup()
-"call telescope#asd()
+source ./plugins/telescope.vim
+
+" Rainbow Bracket
+source ./plugins/rainbowbracket.vim
+
+" NerdTree
+source ./plugins/nerdtree.vim
+
+" DevIcons
+source ./plugins/devicons.vim
+
+" NerdCommenter
+source ./plugins/nerdcommenter.vim
+
+" Lsp
+let g:builtin_lps = v:true
 
 " Neoformat
 " nnoremap gs :Neoformat<Cr>
@@ -239,50 +133,6 @@ nnoremap gc telescope.actions.layout.toggle_preview(false)
 
 " Autoformat
 "let g:run_all_formatters_python = 1
-
-" Rainbow Bracket
-let g:rainbow_active = 1
-let g:rainbow_load_separately = [
-    \ [ '*' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
-    \ [ '*.tex' , [['(', ')'], ['\[', '\]']] ],
-    \ [ '*.cpp' , [['(', ')'], ['\[', '\]'], ['{', '}']] ],
-    \ [ '*.{html,htm}' , [['(', ')'], ['\[', '\]'], ['{', '}'], ['<\a[^>]*>', '</[^>]*>']] ],
-    \ ]
-let g:rainbow_guifgs = ['RoyalBlue3', 'DarkOrange3', 'DarkOrchid3', 'FireBrick']
-let g:rainbow_ctermfgs = ['lightblue', 'lightgreen', 'yellow', 'red', 'magenta']
-
-
-" NerdTree
-nnoremap <leader>n :NERDTreeFocus<CR>
-"nnoremap <C-n> :NERDTree<CR>
-nnoremap <leader>w :NERDTreeToggle<CR>
-"nnoremap <C-f> :NERDTreeFind<CR>
-"Start NerdTree when vim start
-autocmd VimEnter * NERDTree | wincmd p
-" Exit Vim if NERDTree is the only window remaining in the only tab.
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
-" Also open nerdtree in new tab
-"autocmd BufWinEnter * NERDTreeMirror
-
-"ignore file node_modules in nerdtree
-let g:NERDTreeIgnore = ['^node_modules$']
-
-" DevIcons
-let g:webdevicons_enable = 1
-let g:webdevicons_enable_nerdtree = 1
-let g:webdevicons_conceal_nerdtree_brackets = 1
-let g:WebDevIconsNerdTreeAfterGlyphPadding = ' '
-"let g:WebDevIconsNerdTreeGitPluginForceVAlign = 1
-" adding to vim-airline's tabline
-"let g:webdevicons_enable_airline_tabline = 1
-" enable folder/directory glyph flag (disabled by default with 0)
-let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-
-" NerdCommenter
-let g:NERDCreateDefaultMappings = 1
-
-" Lsp
-let g:builtin_lps = v:true
 
 " Need to find out more in :help or :options, See The prime yt video for more
 " set hidden

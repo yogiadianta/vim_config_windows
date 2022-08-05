@@ -1,3 +1,5 @@
+"Gruvbox Setting
+
 let g:gruvbox_contrast_dark='hard'
 " Returns true if the color hex value is light
 function! IsHexColorLight(color) abort
