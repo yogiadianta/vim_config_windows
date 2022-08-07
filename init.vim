@@ -71,7 +71,8 @@ nnoremap <A-d> <C-w><
 " map change tab
 nnoremap <A-m> :tabn<CR>
 nnoremap <A-n> :tabp<CR>
-" cahnge tab order
+ 
+" change tab order
 nnoremap <A-,> :tabmove -1<CR>
 nnoremap <A-.> :tabmove +1<CR>
 
