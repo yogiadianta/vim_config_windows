@@ -77,37 +77,38 @@ nnoremap <A-,> :tabmove -1<CR>
 nnoremap <A-.> :tabmove +1<CR>
 
 " Plugins Section
-source ./plugins/lists.vim
+source C:/Users/Yogi/AppData/Local/nvim/plugins/lists.vim
+"source ./plugins/lists.vim
 
 "Purify
 "source ./plugins/lists.vim
 
 " Gruvbox
-source ./plugins/gruvbox.vim
+source C:/Users/Yogi/AppData/Local/nvim/plugins/gruvbox.vim
 
 "Emmet
-source ./plugins/emmet.vim
+source C:/Users/Yogi/AppData/Local/nvim/plugins/emmet.vim
 
 " Airline
-source ./plugins/airline.vim
+source C:/Users/Yogi/AppData/Local/nvim/plugins/airline.vim
 
 "Coc Completion
-source ./plugins/coc.vim
+source C:/Users/Yogi/AppData/Local/nvim/plugins/coc.vim
 
 " Telescope
-source ./plugins/telescope.vim
+source C:/Users/Yogi/AppData/Local/nvim/plugins/telescope.vim
 
 " Rainbow Bracket
-source ./plugins/rainbowbracket.vim
+source C:/Users/Yogi/AppData/Local/nvim/plugins/rainbowbracket.vim
 
 " NerdTree
-source ./plugins/nerdtree.vim
+source C:/Users/Yogi/AppData/Local/nvim/plugins/nerdtree.vim
 
 " DevIcons
-source ./plugins/devicons.vim
+source C:/Users/Yogi/AppData/Local/nvim/plugins/devicons.vim
 
 " NerdCommenter
-source ./plugins/nerdcommenter.vim
+source C:/Users/Yogi/AppData/Local/nvim/plugins/nerdcommenter.vim
 
 " Neoformat
 "source ./plugins/neoformat.vim
