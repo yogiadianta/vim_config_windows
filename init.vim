@@ -47,6 +47,7 @@ autocmd FileType tmpl setlocal tabstop=2 shiftwidth=2 softtabstop=2
 " Make toggle ga for opening and closing terminal in Vim
 nnoremap ga :split <CR> :resize -8 <CR> :terminal<CR>
 tnoremap ga <C-\><C-n>:q!<CR>
+inoremap ga <C-\><C-n>:q!<CR>
 
 " map to navigate from windows to another window with ALT+
 tnoremap <A-h> <C-\><C-N><C-w>h
