@@ -3,6 +3,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
 
     "Prettier
+    " post install (yarn install | npm install) then load plugin only for editing supported files
+    "Plug 'prettier/vim-prettier', {
+      "\ 'do': 'yarn install --frozen-lockfile --production',
+      "\ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
     "Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
     "Plug 'sbdchd/neoformat'
     "Plug 'vim-autoformat/vim-autoformat'
@@ -33,8 +37,8 @@ call plug#begin('~/.vim/plugged')
     "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
     "Theme
-    Plug 'morhetz/gruvbox'
-    "Plug 'kyoz/purify', { 'rtp': 'vim' }
+    "Plug 'morhetz/gruvbox'
+    Plug 'kyoz/purify', { 'rtp': 'vim' }
 
     "Statusbar
     Plug 'vim-airline/vim-airline'

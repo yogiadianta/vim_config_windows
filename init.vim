@@ -111,8 +111,11 @@ source C:/Users/Yogi/AppData/Local/nvim/plugins/devicons.vim
 " NerdCommenter
 source C:/Users/Yogi/AppData/Local/nvim/plugins/nerdcommenter.vim
 
+" Prettier
+"source C:/Users/Yogi/AppData/Local/nvim/plugins/prettier.vim
+
 " Neoformat
-"source ./plugins/neoformat.vim
+"source C:/Users/Yogi/AppData/Local/nvim/plugins/neoformat.vim
 
 " Autoformat
 "let g:run_all_formatters_python = 1
