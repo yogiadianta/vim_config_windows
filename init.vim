@@ -14,7 +14,7 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
-set scrolloff=14
+set scrolloff=10
 set splitbelow
 set cmdheight=2
 "set guicursor="|"
@@ -82,10 +82,10 @@ source C:/Users/Yogi/AppData/Local/nvim/plugins/lists.vim
 "source ./plugins/lists.vim
 
 "Purify
-"source ./plugins/lists.vim
+source C:/Users/Yogi/AppData/Local/nvim/plugins/purify.vim
 
 " Gruvbox
-source C:/Users/Yogi/AppData/Local/nvim/plugins/gruvbox.vim
+"source C:/Users/Yogi/AppData/Local/nvim/plugins/gruvbox.vim
 
 "Emmet
 source C:/Users/Yogi/AppData/Local/nvim/plugins/emmet.vim
