@@ -8,6 +8,7 @@ let mapleader = ","
 
 " Map ,, to refresh vimrc
 map <leader><leader> :source % <CR>
+map <leader>so :source C:/Users/Yogi/AppData/Local/nvim/init.vim<CR>
 
 " set every tab equal with 4 spaces and scrolloff 8
 set tabstop=4 softtabstop=4
@@ -34,6 +35,8 @@ noswapfile
 hi ColorColumn guibg=lightgrey ctermbg=darkgrey 
 
 " Indent make visual mode stay after indnenting
+nnoremap > >>
+nnoremap < <<
 vnoremap > >gv
 vnoremap < <gv
 vnoremap <tab> >gv
