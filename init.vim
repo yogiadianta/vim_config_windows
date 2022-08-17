@@ -15,6 +15,7 @@ set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
+set autoindent
 set scrolloff=10
 set splitbelow
 set cmdheight=2
@@ -70,10 +71,10 @@ nnoremap <A-k> <C-\><C-N><C-w>k
 nnoremap <A-l> <C-\><C-N><C-w>l
 
 " map to resize window 
-nnoremap <A-a> <C-w>>
-nnoremap <A-s> <C-w>-
-nnoremap <A-w> <C-w>+
-nnoremap <A-d> <C-w><
+nnoremap <A-a> <C-w>>3
+nnoremap <A-s> <C-w>-3
+nnoremap <A-w> <C-w>+3
+nnoremap <A-d> <C-w><3
 
 " map change tab
 nnoremap <A-m> :tabn<CR>
