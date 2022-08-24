@@ -43,11 +43,16 @@ vnoremap < <gv
 vnoremap <tab> >gv
 nnoremap ge >a{j
 
-" Set tab width 2 for css and html only file
-autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+" Looking for remove all indent and do all indent automatically
+" :%le and =gg
+" :%le to remove all indent aka :left function
+" =gg do all indent from top to buttom
+
+" Set tab width 2 for css and html only file autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType css setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType tmpl setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType json setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType js setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 " Make toggle ga for opening and closing terminal in Vim
 nnoremap ga :split <CR> :resize -8 <CR> :terminal<CR>
@@ -71,10 +76,10 @@ nnoremap <A-k> <C-\><C-N><C-w>k
 nnoremap <A-l> <C-\><C-N><C-w>l
 
 " map to resize window 
-nnoremap <A-a> <C-w>>3
-nnoremap <A-s> <C-w>-3
-nnoremap <A-w> <C-w>+3
-nnoremap <A-d> <C-w><3
+nnoremap <A-a> <C-w>>2
+nnoremap <A-s> <C-w>-2
+nnoremap <A-w> <C-w>+2
+nnoremap <A-d> <C-w><2
 
 " map change tab
 nnoremap <A-m> :tabn<CR>

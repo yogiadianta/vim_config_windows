@@ -13,3 +13,6 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 
 "ignore file node_modules in nerdtree
 let g:NERDTreeIgnore = ['^node_modules$']
+
+"remove line number in nerdtree
+let NERDTreeShowLineNumbers=0

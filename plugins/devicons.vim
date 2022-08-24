@@ -22,3 +22,11 @@ let g:webdevicons_enable_airline_tabline = 1
 
 " adding to vim-airline's statusline
 let g:webdevicons_enable_airline_statusline = 1
+
+" after resource, fix xyntax matching issue (conceal brackets)
+if exists('g:loaded_webdevicons')
+    call webdevicons#refresh()
+endif
+
+" for fixing nerdtree icons color
+highlight! link NERDTreeFlags NERDTreeDir
