@@ -16,3 +16,6 @@ let g:NERDTreeIgnore = ['^node_modules$']
 
 "remove line number in nerdtree
 let NERDTreeShowLineNumbers=0
+
+"Closing tab when nerdtree is the last opened window
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
