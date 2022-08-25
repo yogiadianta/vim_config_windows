@@ -82,8 +82,8 @@ nnoremap <A-w> <C-w>+2
 nnoremap <A-d> <C-w><2
 
 " map change tab
-nnoremap <A-m> :tabn<CR>
-nnoremap <A-n> :tabp<CR>
+nnoremap <A-K> :tabn<CR>
+nnoremap <A-J> :tabp<CR>
  
 " change tab order
 nnoremap <A-,> :tabmove -1<CR>
