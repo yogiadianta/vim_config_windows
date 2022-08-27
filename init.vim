@@ -89,6 +89,9 @@ nnoremap <A-H> :tabp<CR>
 nnoremap <A-,> :tabmove -1<CR>
 nnoremap <A-.> :tabmove +1<CR>
 
+" I am not used to macro yet, so i just remap it to move to end of line
+nnoremap q $
+
 " Plugins Section
 source C:/Users/Yogi/AppData/Local/nvim/plugins/lists.vim
 "source ./plugins/lists.vim
