@@ -4,6 +4,9 @@
 inoremap jk <esc>
 cnoremap jk <esc>
 
+" escape from insert mode in terminal mode 
+cnoremap jk <C-\><C-N>
+
 let mapleader = ","
 
 " Map ,, to refresh vimrc
@@ -134,3 +137,12 @@ source C:/Users/Yogi/AppData/Local/nvim/plugins/nerdcommenter.vim
 
 " Autoformat
 "let g:run_all_formatters_python = 1
+
+" Autorun command when opening vim and open all necessary stuff
+autocmd VimEnter * split
+autocmd VimEnter * resize -10
+autocmd VimEnter * terminal
+autocmd VimEnter * vsplit
+autocmd VimEnter * terminal
+"autocmd VimEnter * <C-\><C-N><C-w>
+au VimEnter * wincmd k
