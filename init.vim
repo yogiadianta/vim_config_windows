@@ -4,6 +4,9 @@
 inoremap jk <esc>
 cnoremap jk <esc>
 
+" escape from insert mode in terminal
+tnoremap jk <C-\><C-N>
+
 " escape from insert mode in terminal mode 
 cnoremap jk <C-\><C-N>
 
