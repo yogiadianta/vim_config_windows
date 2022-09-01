@@ -1,6 +1,6 @@
 " Configuraton for NeoVim Windows
 
-"" map 'jk' and 'kj' to escape key in insert and command mode
+" map 'jk' and 'kj' to escape key in insert and command mode
 inoremap jk <esc>
 cnoremap jk <esc>
 
@@ -142,10 +142,20 @@ source C:/Users/Yogi/AppData/Local/nvim/plugins/nerdcommenter.vim
 "let g:run_all_formatters_python = 1
 
 " Autorun command when opening vim and open all necessary stuff
-autocmd VimEnter * split
-autocmd VimEnter * resize -10
-autocmd VimEnter * terminal
-autocmd VimEnter * vsplit
-autocmd VimEnter * terminal
-"autocmd VimEnter * <C-\><C-N><C-w>
-au VimEnter * wincmd k
+"autocmd VimEnter * split
+"autocmd VimEnter * resize -10
+"autocmd VimEnter * terminal
+"autocmd VimEnter * vsplit
+"autocmd VimEnter * terminal
+""autocmd VimEnter * <C-\><C-N><C-w>
+"au VimEnter * wincmd k
+
+
+"" Need Fixing
+"" Setting to to opening new file (Note) in new tab with new nerdtree buffer 
+"autocmd BufEnter * lcd %:p:h
+"nnoremap gq :tabnew C:/Note/All/vim.md<CR>:NERDTreeToggle %<CR>:wincmd l<CR>
+""nnoremap gq :tabnew C:/Note/test.txt<CR>:NERDTreeFind C:/Note/test.txt<CR>
+
+"" mapping closing tab to :v
+"cnoremap v tabclose
