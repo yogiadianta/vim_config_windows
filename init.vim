@@ -4,6 +4,12 @@
 inoremap jk <esc>
 cnoremap jk <esc>
 
+" Copy selected visual to clipboard
+vnoremap y "+y
+
+" Paste from clipboar
+nnoremap p "+gp
+
 " escape from insert mode in terminal
 tnoremap jk <C-\><C-N>
 
@@ -159,3 +165,4 @@ source C:/Users/Yogi/AppData/Local/nvim/plugins/nerdcommenter.vim
 
 "" mapping closing tab to :v
 "cnoremap v tabclose
+
