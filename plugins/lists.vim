@@ -49,4 +49,7 @@ call plug#begin('~/.vim/plugged')
 
     "Emmet
     Plug 'mattn/emmet-vim'
+
+    "Harpoon
+    Plug 'ThePrimeagen/harpoon'
 call plug#end()

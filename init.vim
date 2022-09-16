@@ -142,6 +142,9 @@ source C:/Users/Yogi/AppData/Local/nvim/plugins/devicons.vim
 " NerdCommenter
 source C:/Users/Yogi/AppData/Local/nvim/plugins/nerdcommenter.vim
 
+" Harpoon
+source C:/Users/Yogi/AppData/Local/nvim/plugins/harpoon.vim
+
 " Prettier
 "source C:/Users/Yogi/AppData/Local/nvim/plugins/prettier.vim
 
