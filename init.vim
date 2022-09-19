@@ -6,6 +6,7 @@ cnoremap jk <esc>
 
 " Copy selected visual to clipboard
 vnoremap y "+y
+nnoremap y "+y
 nnoremap yy "+yy
 
 " Paste from clipboar
