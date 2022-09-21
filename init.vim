@@ -4,7 +4,7 @@
 inoremap jk <esc>
 cnoremap jk <esc>
 
-" Copy selected visual to clipboard
+" Copy selected visual to clipboar
 vnoremap y "+y
 nnoremap y "+y
 nnoremap yy "+yy
@@ -73,6 +73,8 @@ autocmd FileType js setlocal tabstop=2 shiftwidth=2 softtabstop=2
 nnoremap ga :split <CR> :resize -8 <CR> :terminal<CR>
 tnoremap ga <C-\><C-n>:q!<CR>
 inoremap ga <C-\><C-n>:q!<CR>
+"nnoremap gs :tabnew <CR> :terminal<CR>
+nnoremap gs :tabnew +term<CR>
 
 nnoremap gn :vsplit <CR> :terminal <CR>
 
@@ -101,7 +103,7 @@ nnoremap <A-d> <C-w><2
 "nnoremap <A-H> :tabp<CR>
 nnoremap <A-K> :tabn<CR>
 nnoremap <A-J> :tabp<CR>
- 
+
 " change tab order
 nnoremap <A-,> :tabmove -1<CR>
 nnoremap <A-.> :tabmove +1<CR>
