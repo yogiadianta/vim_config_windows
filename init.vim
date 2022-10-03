@@ -69,11 +69,12 @@ autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType tmpl setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType json setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType js setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType yml setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 " Make toggle ga for opening and closing terminal in Vim
 nnoremap ga :split <CR> :resize -8 <CR> :terminal<CR>
 tnoremap ga <C-\><C-n>:q!<CR>
-inoremap ga <C-\><C-n>:q!<CR>
+" inoremap ga <C-\><C-n>:q!<CR>
 "nnoremap gs :tabnew <CR> :terminal<CR>
 nnoremap gs :tabnew +term<CR>
 
