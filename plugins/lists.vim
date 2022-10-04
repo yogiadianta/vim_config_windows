@@ -52,4 +52,7 @@ call plug#begin('~/.vim/plugged')
 
     "Harpoon
     Plug 'ThePrimeagen/harpoon'
+
+    "Vim-fugitive
+    Plug 'tpope/vim-fugitive'
 call plug#end()
