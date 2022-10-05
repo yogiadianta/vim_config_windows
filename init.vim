@@ -117,14 +117,17 @@ nnoremap q $
 source C:/Users/Yogi/AppData/Local/nvim/plugins/lists.vim
 "source ./plugins/lists.vim
 
-"Purify
-"source C:/Users/Yogi/AppData/Local/nvim/plugins/purify.vim
+" Purify
+source C:/Users/Yogi/AppData/Local/nvim/plugins/purify.vim
 
 " Gruvbox
 "source C:/Users/Yogi/AppData/Local/nvim/plugins/gruvbox.vim
 
 " TokyoNight
-source C:/Users/Yogi/AppData/Local/nvim/plugins/tokyonight.vim
+"source C:/Users/Yogi/AppData/Local/nvim/plugins/tokyonight.vim
+
+" Dracula
+"source C:/Users/Yogi/AppData/Local/nvim/plugins/dracula.vim
 
 "Emmet
 source C:/Users/Yogi/AppData/Local/nvim/plugins/emmet.vim

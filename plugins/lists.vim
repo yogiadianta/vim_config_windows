@@ -40,6 +40,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'morhetz/gruvbox'
     Plug 'kyoz/purify', { 'rtp': 'vim' }
     Plug 'ghifarit53/tokyonight-vim'
+    Plug 'dracula/vim', { 'as': 'dracula' }
 
     "Statusbar
     Plug 'vim-airline/vim-airline'
