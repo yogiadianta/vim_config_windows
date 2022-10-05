@@ -37,8 +37,9 @@ call plug#begin('~/.vim/plugged')
     "Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
     "Theme
-    "Plug 'morhetz/gruvbox'
+    Plug 'morhetz/gruvbox'
     Plug 'kyoz/purify', { 'rtp': 'vim' }
+    Plug 'ghifarit53/tokyonight-vim'
 
     "Statusbar
     Plug 'vim-airline/vim-airline'

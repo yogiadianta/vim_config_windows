@@ -118,10 +118,13 @@ source C:/Users/Yogi/AppData/Local/nvim/plugins/lists.vim
 "source ./plugins/lists.vim
 
 "Purify
-source C:/Users/Yogi/AppData/Local/nvim/plugins/purify.vim
+"source C:/Users/Yogi/AppData/Local/nvim/plugins/purify.vim
 
 " Gruvbox
 "source C:/Users/Yogi/AppData/Local/nvim/plugins/gruvbox.vim
+
+" TokyoNight
+source C:/Users/Yogi/AppData/Local/nvim/plugins/tokyonight.vim
 
 "Emmet
 source C:/Users/Yogi/AppData/Local/nvim/plugins/emmet.vim
@@ -177,4 +180,3 @@ source C:/Users/Yogi/AppData/Local/nvim/plugins/harpoon.vim
 
 "" mapping closing tab to :v
 "cnoremap v tabclose
-
