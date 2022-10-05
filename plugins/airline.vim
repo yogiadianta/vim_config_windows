@@ -1,7 +1,7 @@
 "Airline Setting
 
 "let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='minimalist'
+let g:airline_theme='tokyonight'
 " candidate them
 " raven
 " serene
@@ -17,6 +17,7 @@ let g:airline_theme='minimalist'
 " biogoo
 " zenburn
 " owo
+" tokyonight
 "let g:airline_base16_improved_contrast = 1
 
 " airline for tabline
