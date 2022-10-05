@@ -25,6 +25,8 @@ nnoremap <leader>4 :lua require("harpoon.term").gotoTerminal(4) <CR>
 nnoremap <leader>5 :lua require("harpoon.term").gotoTerminal(5) <CR>
 
 " Send some command to terminal "need to make it more dynamic"
-command! -nargs=* Xyz :call echo('<q-args>')
+"command! -nargs=* Xyz :call echo('<q-args>')
 
-"command! -nargs=* Masd :call lua require("harpoon.term").gotoTerminal(<q-args>)
+"command! -nargs=* Masd :lua require("harpoon.term").gotoTerminal(<q-args>) <CR>
+"command! -nargs=* Mqwe :lua require("harpoon.ui").nav_file(<q-args>)<CR>
+":nnoremap <buffer> <leader> xyz :lua require("harpoon.term").gotoTerminal(5) <CR>
