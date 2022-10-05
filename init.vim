@@ -19,7 +19,7 @@ tnoremap jk <C-\><C-N>
 " escape from insert mode in terminal mode 
 cnoremap jk <C-\><C-N>
 
-let mapleader = ","
+let mapleader = " "
 
 " Map ,, to refresh vimrc
 map <leader><leader> :source % <CR>
