@@ -31,7 +31,7 @@ set shiftwidth=4
 set expandtab
 set smartindent
 set autoindent
-set scrolloff=10
+set scrolloff=14
 set splitbelow
 set cmdheight=2
 "set guicursor="|"
