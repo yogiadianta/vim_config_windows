@@ -8,10 +8,12 @@ nnoremap <A-b> :lua require("harpoon.mark").add_file() <CR>
 nnoremap <A-1> :lua require("harpoon.ui").nav_file(1)<CR>
 nnoremap <A-2> :lua require("harpoon.ui").nav_file(2)<CR>
 nnoremap <A-3> :lua require("harpoon.ui").nav_file(3)<CR>
-nnoremap <A-4> :lua require("harpoon.ui").nav_file(4)<CR>
-nnoremap <A-5> :lua require("harpoon.ui").nav_file(5)<CR>
-nnoremap <A-6> :lua require("harpoon.ui").nav_file(6)<CR>
-nnoremap <A-7> :lua require("harpoon.ui").nav_file(7)<CR>
+nnoremap <A-q> :lua require("harpoon.ui").nav_file(4)<CR>
+nnoremap <A-w> :lua require("harpoon.ui").nav_file(5)<CR>
+nnoremap <A-e> :lua require("harpoon.ui").nav_file(6)<CR>
+"nnoremap <A-4> :lua require("harpoon.ui").nav_file(4)<CR>
+"nnoremap <A-5> :lua require("harpoon.ui").nav_file(5)<CR>
+"nnoremap <A-6> :lua require("harpoon.ui").nav_file(6)<CR>
 
 " Prev and next harpoon
 nnoremap <leader>j :lua require("harpoon.ui").nav_next() <CR>
