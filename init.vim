@@ -73,7 +73,7 @@ autocmd FileType yml setlocal tabstop=4 shiftwidth=4 softtabstop=4
 
 " Make toggle ga for opening and closing terminal in Vim
 nnoremap ga :split <CR> :resize -8 <CR> :terminal<CR>
-tnoremap ga <C-\><C-n>:q!<CR>
+"tnoremap ga <C-\><C-n>:q!<CR>
 " inoremap ga <C-\><C-n>:q!<CR>
 "nnoremap gs :tabnew <CR> :terminal<CR>
 nnoremap gs :tabnew +term<CR>
