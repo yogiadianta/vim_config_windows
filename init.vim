@@ -22,7 +22,7 @@ cnoremap jk <C-\><C-N>
 let mapleader = " "
 
 " Map ,, to refresh vimrc
-map <leader><leader> :source % <CR>
+"map <leader><leader> :source % <CR>
 map <leader>so :source C:/Users/Yogi/AppData/Local/nvim/init.vim<CR>
 
 " set every tab equal with 4 spaces and scrolloff 8
