@@ -78,7 +78,7 @@ nnoremap ga :split <CR> :resize -8 <CR> :terminal<CR>
 "nnoremap gs :tabnew <CR> :terminal<CR>
 nnoremap gs :tabnew +term<CR>
 
-nnoremap gn :vsplit <CR> :terminal <CR>
+"nnoremap gn :vsplit <CR> :terminal <CR>
 
 " map to navigate from windows to another window with ALT+
 tnoremap <A-h> <C-\><C-N><C-w>h
