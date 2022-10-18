@@ -129,6 +129,10 @@ source C:/Users/Yogi/AppData/Local/nvim/plugins/purify.vim
 " Dracula
 "source C:/Users/Yogi/AppData/Local/nvim/plugins/dracula.vim
 
+" Poimandres
+"source C:/Users/Yogi/AppData/Local/nvim/plugins/poimandres.vim
+"source C:/Users/Yogi/AppData/Local/nvim/plugins/poimandres.lua
+
 "Emmet
 source C:/Users/Yogi/AppData/Local/nvim/plugins/emmet.vim
 
