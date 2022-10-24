@@ -187,3 +187,5 @@ source C:/Users/Yogi/AppData/Local/nvim/plugins/harpoon.vim
 
 "" mapping closing tab to :v
 "cnoremap v tabclose
+
+" Something to commend commit?
