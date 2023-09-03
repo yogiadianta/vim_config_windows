@@ -34,7 +34,10 @@ set autoindent
 set scrolloff=14
 set splitbelow
 set cmdheight=2
-"set guicursor="|"
+"set guicursor=""
+if has('gui_running')
+    set guicursor=n:block-Cursor,i:block-Cursor-sm
+endif
 set nowrap
 set number
 set relativenumber
@@ -49,6 +52,9 @@ set nowritebackup
 set splitright
 noswapfile
 hi ColorColumn guibg=lightgrey ctermbg=darkgrey 
+
+"autocmd VimEnter,InsertLeave * set guicursor=n-v-c:block
+"autocmd InsertEnter * set guicursor=n-v-c:ver30
 
 " Indent make visual mode stay after indnenting
 nnoremap > >>
@@ -80,6 +86,16 @@ nnoremap gs :tabnew +term<CR>
 
 "nnoremap gn :vsplit <CR> :terminal <CR>
 
+" For auto bracket 
+inoremap " ""<left>
+inoremap ` ``<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>0
+
 " map to navigate from windows to another window with ALT+
 tnoremap <A-h> <C-\><C-N><C-w>h
 tnoremap <A-j> <C-\><C-N><C-w>j
@@ -96,9 +112,11 @@ nnoremap <A-l> <C-\><C-N><C-w>l
 
 " map to resize window 
 nnoremap <A-a> <C-w>>2
-nnoremap <A-s> <C-w>-2
-nnoremap <A-w> <C-w>+2
 nnoremap <A-d> <C-w><2
+nnoremap <A-D> <C-w>-2
+nnoremap <A-A> <C-w>+2
+"nnoremap <A-x> <C-w>-2
+"nnoremap <A-s> <C-w>+2
 
 " map change tab
 "nnoremap <A-L> :tabn<CR>
@@ -112,6 +130,12 @@ nnoremap <A-.> :tabmove +1<CR>
 
 " I am not used to macro yet, so i just remap it to move to end of line
 nnoremap q $
+vnoremap q $
+
+" Autoformat go when save
+""autocmd BufWritePre *.go :silent! execute '!gofmt -w %' | e!
+"autocmd BufWritePre *.go :let save_cursor = getpos(".") | :silent! execute '!gofmt -w %' | :call setpos('.', save_cursor) | :silent! update
+nnoremap gq :silent! execute '!gofmt -w %'<CR>
 
 " Plugins Section
 source C:/Users/Yogi/AppData/Local/nvim/plugins/lists.vim
